@@ -8,11 +8,13 @@ import { ItemService } from './item.service'
   templateUrl: './items.component.html',
 })
 export class ItemsComponent implements OnInit {
-  items: Array<Item>
 
-  constructor(private itemService: ItemService) {}
+  constructor() {}
 
   ngOnInit(): void {
-    this.items = this.itemService.getItems()
+  }
+
+  textChange(event){
+    console.log(`textChange: ${event.value}`);
   }
 }
