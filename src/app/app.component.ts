@@ -5,5 +5,7 @@ import { Component } from '@angular/core'
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-
 }
+
+//for this:
+//https://github.com/NativeScript/NativeScript/issues/10267
